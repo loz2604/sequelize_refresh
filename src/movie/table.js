@@ -10,7 +10,18 @@ const Movie = sequelize.define("Movie", {
     actor: {
         type: DataTypes.STRING,
         defaultValue: "Not specified"
-    }
+    },
+    // addedBy: {
+    //     type: DataTypes.STRING
+    // }
 });
 
-module.exports = Movie;
+// const User = sequelize.define("User", {
+//     name: {
+//         type: DataTypes.STRING,
+//         allowNull: false,
+//         unique: true
+//     }
+// });
+
+module.exports = Movie, User;
